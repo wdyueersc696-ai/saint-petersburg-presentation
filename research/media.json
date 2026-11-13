@@ -1,0 +1,113 @@
+{
+  "items": [
+    {
+      "id": "peter-i",
+      "label": "Пётр I. Поль Деларош, 1838",
+      "title": "File:Peter der-Grosse 1838.jpg",
+      "kind": "image",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peter_der-Grosse_1838.jpg",
+      "author": "Paul Delaroche",
+      "license": "Public domain",
+      "license_url": "",
+      "changes": "Оригинал скачан без изменений. Кадрирование и цветокоррекция в презентации должны быть отмечены в титрах.",
+      "web_changes": "Уменьшение до 2400×1600 максимум и JPEG-пересжатие; исходное соотношение сторон сохранено."
+    },
+    {
+      "id": "old-neva-1753",
+      "label": "Вид Невы. Махаев и Качалов, 1753",
+      "title": "File:Makhayev, Kachalov - View of Neva Downstream between Winter Palace and Academy of Sciences 1753.jpg",
+      "kind": "image",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Makhayev,_Kachalov_-_View_of_Neva_Downstream_between_Winter_Palace_and_Academy_of_Sciences_1753.jpg",
+      "author": "Гравюра Г. А. Качалова и Е. Г. Виноградова по рисунку М. И. Махаева",
+      "license": "Public domain",
+      "license_url": "",
+      "changes": "Оригинал скачан без изменений. Кадрирование и цветокоррекция в презентации должны быть отмечены в титрах.",
+      "web_changes": "Уменьшение до 2400×1600 максимум и JPEG-пересжатие; исходное соотношение сторон сохранено."
+    },
+    {
+      "id": "palace-bridge",
+      "label": "Дворцовый мост",
+      "title": "File:Palace Bridge Panorama (img1).jpg",
+      "kind": "image",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Palace_Bridge_Panorama_(img1).jpg",
+      "author": "Florstein (Telegram:WikiPhoto.Space)",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Оригинал скачан без изменений. Кадрирование и цветокоррекция в презентации должны быть отмечены в титрах.",
+      "web_changes": "Уменьшение до 2400×1600 максимум и JPEG-пересжатие; исходное соотношение сторон сохранено."
+    },
+    {
+      "id": "moika-canal",
+      "label": "File:Saint Petersburg Canal 06.jpg",
+      "kind": "image",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Petersburg_Canal_06.jpg",
+      "author": "Ad Meskens",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Исходник без изменений. При использовании указать кадрирование/цветокоррекцию/монтаж.",
+      "web_changes": "Уменьшение до 2400×1600 максимум и JPEG-пересжатие; исходное соотношение сторон сохранено."
+    },
+    {
+      "id": "astoria",
+      "label": "File:Hotel Astoria in SPB 02.jpg",
+      "kind": "image",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hotel_Astoria_in_SPB_02.jpg",
+      "author": "Florstein (Telegram:WikiPhoto.Space)",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Исходник без изменений. При использовании указать кадрирование/цветокоррекцию/монтаж.",
+      "web_changes": "Уменьшение до 2400×1600 максимум и JPEG-пересжатие; исходное соотношение сторон сохранено."
+    },
+    {
+      "id": "restaurant",
+      "label": "File:2022-08-20 - Kashmir Indian Restaurant at Bolshaya Moskovskaya Street (Saint Petersburg).jpg",
+      "kind": "image",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2022-08-20_-_Kashmir_Indian_Restaurant_at_Bolshaya_Moskovskaya_Street_(Saint_Petersburg).jpg",
+      "author": "Oleg Bkhambri (Voltmetro)",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Исходник без изменений. При использовании указать кадрирование/цветокоррекцию/монтаж.",
+      "web_changes": "Уменьшение до 2400×1600 максимум и JPEG-пересжатие; исходное соотношение сторон сохранено."
+    },
+    {
+      "id": "palace-square-night-web",
+      "label": "File:Palace Square at night, Saint Petersburg, Russia.jpg",
+      "kind": "image",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Palace_Square_at_night,_Saint_Petersburg,_Russia.jpg",
+      "author": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "changes": "Уменьшенная Wikimedia версия. Кадрирование/тонировку отметить в титрах."
+    },
+    {
+      "id": "winter-palace-night-web",
+      "label": "File:The Winter Palace and Palace Square at night 2, Saint Petersburg, Russia.jpg",
+      "kind": "image",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Winter_Palace_and_Palace_Square_at_night_2,_Saint_Petersburg,_Russia.jpg",
+      "author": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "changes": "Уменьшенная Wikimedia версия. Кадрирование/тонировку отметить в титрах."
+    },
+    {
+      "id": "hotel-room-pinterest",
+      "label": "Классический гостиничный интерьер",
+      "kind": "image",
+      "source_url": "https://ru.pinterest.com/pin/998039967407742817/",
+      "author": "Публикатор Pinterest: Moore / yourmoore; фотограф не указан",
+      "license": "Открытая лицензия не подтверждена",
+      "license_url": "",
+      "changes": "Уменьшение, кадрирование и цветокоррекция. Использовано как иллюстрация интерьера; конкретный отель и город не установлены."
+    },
+    {
+      "id": "petersburg-finale-neva-4k",
+      "label": "Панорамы Петербурга в закатном свете",
+      "kind": "video",
+      "source_url": "https://www.youtube.com/watch?v=DkakP9l_71Q",
+      "author": "Канал 4K Cities by Adnan",
+      "license": "Открытая лицензия в метаданных не указана",
+      "license_url": "",
+      "changes": "Монтаж четырёх планов с мягкими переходами; исходное 4K, 25 fps, звуковая дорожка удалена."
+    }
+  ]
+}

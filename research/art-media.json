@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "id": "bronze-horseman-close",
+      "label": "Медный всадник, крупный ракурс",
+      "title": "File:Bronze Horseman 02.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bronze_Horseman_02.jpg",
+      "author": "Alex (Florstein) Fedorov",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "id": "bronze-horseman-sunset",
+      "label": "Медный всадник в тёплом вечернем свете",
+      "title": "File:RUS-2016-SPB-Bronze Horseman 03.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RUS-2016-SPB-Bronze_Horseman_03.jpg",
+      "author": "Godot13",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "id": "isaac-cathedral-front",
+      "label": "Исаакиевский собор, фронтальный вид",
+      "title": "File:Saint Isaac's Cathedral in SPB.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Isaac%27s_Cathedral_in_SPB.jpeg",
+      "author": "Florstein (Telegram:WikiPhoto.Space)",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ]
+}

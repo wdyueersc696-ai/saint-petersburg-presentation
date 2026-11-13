@@ -1,0 +1,80 @@
+{
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Экономика Петербурга в 2025 году: итоги по ключевым показателям",
+      "publisher": "Официальный сайт Администрации Санкт-Петербурга",
+      "url": "https://www.gov.spb.ru/press/governor/313342/",
+      "period": "2025"
+    },
+    {
+      "id": "S02",
+      "title": "Турбарометр Санкт-Петербурга 2025, выпуск 1",
+      "publisher": "Международный центр компетенций в сфере туризма и гостеприимства Санкт-Петербурга",
+      "url": "https://competenc-spb.ru/files/Turbarometr_01_2025_VIEW.pdf",
+      "period": "2025"
+    },
+    {
+      "id": "S03",
+      "title": "Historic Centre of Saint Petersburg and Related Groups of Monuments",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/540",
+      "period": "Историческая справка; объект внесён в 1990 году"
+    },
+    {
+      "id": "S04",
+      "title": "Аэропорт Пулково, официальный пресс-центр",
+      "publisher": "Аэропорт Пулково",
+      "url": "https://pulkovoairport.ru/about/press_center/news/59977/"
+    },
+    {
+      "id": "S05",
+      "title": "Интерактивная схема Петербургского метрополитена",
+      "publisher": "ГУП «Петербургский метрополитен»",
+      "url": "https://metro.spb.ru/interactive.html?v=1"
+    },
+    {
+      "id": "S06",
+      "title": "Новая туристская география",
+      "publisher": "Официальный городской туристический портал Visit Petersburg",
+      "url": "https://visit-petersburg.ru/projects/lp/geografiya/"
+    },
+    {
+      "id": "S07",
+      "title": "Какой порядок проведения работ на объектах культурного наследия?",
+      "publisher": "КГИОП, Официальный сайт Администрации Санкт-Петербурга",
+      "url": "https://www.gov.spb.ru/gov/otrasl/c_govcontrol/obrasheniya-grazhdan/faq/6024/"
+    },
+    {
+      "id": "S08",
+      "title": "Туристический налог: особенности регионального законодательства Санкт-Петербурга",
+      "publisher": "ФНС России, регион 78",
+      "url": "https://www.nalog.gov.ru/rn78/taxation/taxes/tourist_tax/",
+      "period": "2026"
+    },
+    {
+      "id": "S09",
+      "title": "Турагентства и туроператоры: в чём разница?",
+      "publisher": "Роспотребнадзор, государственный информационный ресурс защиты прав потребителей",
+      "url": "https://zpp.rospotrebnadzor.ru/news/federal/574825"
+    },
+    {
+      "id": "S10",
+      "title": "Услуги внутреннего туризма",
+      "publisher": "Роспотребнадзор, государственный информационный ресурс защиты прав потребителей",
+      "url": "https://zpp.rospotrebnadzor.ru/news/federal/574260"
+    },
+    {
+      "id": "S11",
+      "title": "Пищевые риски и контроль на предприятиях общественного питания",
+      "publisher": "Управление Роспотребнадзора по Республике Мордовия",
+      "url": "https://13.rospotrebnadzor.ru/content/sanitarno-epidemiologicheskie-trebovaniya-k-organizaciyam-obshchestvennogo-pitaniya-v-zimniy"
+    },
+    {
+      "id": "S12",
+      "title": "Официальный сайт СПб ГБУ «Мостотрест»",
+      "publisher": "СПб ГБУ «Мостотрест»",
+      "url": "https://mostotrest-spb.ru/"
+    }
+  ]
+}

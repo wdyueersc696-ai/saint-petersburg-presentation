@@ -1,0 +1,278 @@
+/* Approved direction: collage cover B, quiet museum content A. */
+@font-face {
+  font-family: MuseumOswald;
+  src: url('assets/fonts/Oswald.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+}
+
+:root {
+  --ink: #171411;
+  --paper: #f3eddf;
+  --muted: #b9a98f;
+  --line: #65563e;
+  --amber: #c6ad7d;
+  --river: #bca27a;
+  --r-background-color: #171411;
+  --r-main-color: #f3eddf;
+  --r-heading-color: #f3eddf;
+  --r-main-font: Georgia, serif;
+  --r-heading-font: Georgia, serif;
+  --r-link-color: #d5bb8b;
+  --r-selection-background-color: #bba17066;
+}
+
+body, .reveal-viewport { background: #171411; color: #f3eddf; }
+.reveal { color: var(--paper); font-family: Georgia, serif; }
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--paper);
+  font-weight: 400;
+  letter-spacing: -.035em;
+}
+.reveal h2 { font-size: 80px; line-height: 1.08; max-width: 1540px; }
+.museum-heading-line { display: block; line-height: inherit; padding-bottom: .08em; }
+.motion-word { display: inline-block; transform-origin: center bottom; }
+.reveal h3 { font-size: 38px; line-height: 1.25; }
+.reveal p { font-family: Georgia, serif; font-size: 33px; line-height: 1.4; }
+.canvas { background: #211e17; }
+.canvas:not(.heritage-cover)::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: url('assets/images/old-neva-1753-web.jpg') center 65% / cover;
+  filter: sepia(1);
+  opacity: .075;
+  pointer-events: none;
+}
+.canvas::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+  opacity: .035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)' opacity='.7'/%3E%3C/svg%3E");
+}
+.museum-source-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: .08;
+  filter: sepia(.8) brightness(.6);
+  background-position: center;
+  background-size: cover;
+  mask-image: linear-gradient(125deg, transparent 30%, #000 100%);
+  -webkit-mask-image: linear-gradient(125deg, transparent 30%, #000 100%);
+  pointer-events: none;
+}
+.river-line { display: none !important; }
+.content { padding: 88px 120px 84px; }
+.kicker {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  line-height: 1.3;
+  color: #d2c0a2;
+  text-transform: none;
+  letter-spacing: 1.5px;
+  margin-bottom: 32px;
+}
+.kicker::before { display: none; }
+.slide-num { font: 22px Georgia, serif; color: #b9a98f; right: 120px; top: 91px; }
+.slide-source {
+  left: 120px;
+  right: 120px;
+  bottom: 40px;
+  color: #c4b398;
+  font-family: Golos, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.35;
+  z-index: 5;
+}
+.slide-source a { color: #d9c39f; }
+.slide-claim, .small-note { color: #c7b9a1; }
+.small-note { font-family: Golos, Arial, sans-serif !important; font-size: 23px !important; line-height: 1.45 !important; }
+
+/* Warm photography, with a fine classical arch rather than a UI card. */
+.photo-bg { filter: sepia(.22) saturate(.65) brightness(.75); }
+.photo-scrim {
+  background: linear-gradient(90deg, #171411f0 0%, #171411bc 47%, #17141122 100%),
+              linear-gradient(0deg, #171411 0%, transparent 70%);
+}
+.photo-bottom { filter: sepia(.4) saturate(.5) brightness(.5); }
+.photo-window { border-radius: 350px 350px 0 0; border: 1px solid #c4a87355; }
+.photo-window img { filter: sepia(.3) saturate(.65) brightness(.82); }
+.photo-window::before { content: ''; position: absolute; inset: 0; z-index: 1; background: linear-gradient(transparent 66%, #171411c9); pointer-events: none; }
+.photo-window::after { border: 0; }
+.photo-caption { z-index: 2; color: #f3eddf; font-family: Georgia, serif; font-size: 22px; left: 24px; right: 24px; bottom: 22px; }
+.split-layout { gap: 76px; margin-top: 46px; }
+.statement { border-color: #6c5c426e; gap: 24px; }
+.statement p { font-family: Georgia, serif; font-size: 33px; line-height: 1.35; }
+.statement-mark { font-family: Georgia, serif; color: #c6ad7d; font-size: 27px; }
+
+/* Slides 2 and 8: left evidence, large number, right architectural crop. */
+.museum-metric-layout { position: relative; margin-top: 32px; min-height: 620px; }
+.museum-metric-copy { position: relative; width: 940px; z-index: 3; }
+.museum-metric-number { font: 400 240px/.98 Georgia, serif; color: #f3eddf; letter-spacing: -11px; white-space: nowrap; }
+.museum-metric-number span { font: inherit; }
+.museum-metric-number small { font: 400 52px/1 Georgia, serif; letter-spacing: 0; margin-left: 28px; }
+.museum-metric-number.restaurant-number { font-size: 210px; letter-spacing: -10px; }
+.museum-metric-number.restaurant-number small { font-size: 43px; margin-left: 25px; }
+.museum-metric-label { margin-top: 28px; max-width: 900px; font: 31px/1.35 Golos, Arial, sans-serif; color: #d6c8b4; }
+.museum-evidence { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; max-width: 920px; margin-top: 48px; }
+.museum-evidence p { border-top: 1px solid #79674b; padding-top: 22px; font: 29px/1.4 Georgia, serif; color: #d0c2ab; }
+.museum-metric-copy .small-note { max-width: 900px; margin-top: 24px !important; font-size: 22px !important; }
+.museum-metric-photo { position: absolute; width: 650px; height: 790px; right: 0; top: -150px; border-radius: 360px 360px 0 0; overflow: hidden; z-index: 2; border: 1px solid #c4a87355; }
+.museum-metric-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; filter: sepia(.5) saturate(.55) brightness(.76); }
+.metric-value { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.045em; }
+.metric-unit, .metric-year { font-family: Georgia, serif; }
+.metric-definition, .metric-side p { font-family: Georgia, serif; color: #c7b9a1; }
+.metric-rule { background: #65563e; }
+.metric-side { border-color: #65563e; }
+
+/* Retain the explanatory layouts and give them one museum visual language. */
+.route-path { stroke: #bca27a; stroke-width: 2; }
+.route-node .icon { stroke: #c6ad7d; }
+.route-node h3 { font: 32px/1.25 Georgia, serif; letter-spacing: -.02em; }
+.route-node p, .route-note { font-family: Georgia, serif; color: #c7b9a1; }
+.season-wheel circle { stroke: #665740; }
+.season-wheel .wheel-path { stroke: #a38a61; }
+.season-wheel .wheel-warm { stroke: #d0b47b; }
+.season-wheel .wheel-label { font-family: Georgia, serif; font-size: 29px; fill: #f3eddf; }
+.season-wheel .wheel-center { font-family: Georgia, serif; fill: #c8baa1; }
+.season-list .statement p { font-family: Georgia, serif; font-size: 31px; }
+.hotel-room { background: linear-gradient(110deg, #3b3326, #27231c); border-color: #87714e; }
+.room-window { border-color: #95846c; background: linear-gradient(#656d66, #a8aa8f); }
+.room-window::after { background: #95846c; }
+.room-bed { background: #746a56; }
+.room-bed::before { background: #b4a88e; box-shadow: 145px 0 0 #b4a88e; }
+.room-person, .room-person::before { background: #bda06c; }
+.room-state { color: #d6c8b1; font-family: Georgia, serif; font-size: 25px; }
+.toggle-set { border-color: #79674b; }
+.toggle-set button { font-family: Georgia, serif; color: #b9a98f; }
+.toggle-set button.active { color: #f3eddf; border-color: #cfb57f; }
+.cost-row { border-color: #6e5e446e; font-family: Georgia, serif; font-size: 31px; }
+.cost-status { font-family: Golos, Arial, sans-serif; color: #d1b57d; }
+.day-slot { border-color: #a38a61; }
+.day-slot::before { background: #c6ad7d; width: 10px; height: 10px; top: -6px; }
+.day-time { font-family: Georgia, serif; color: #d0b47b; font-weight: 400; letter-spacing: -2px; }
+.day-slot h3 { font-family: Georgia, serif; font-size: 38px; }
+.day-slot p { font-family: Georgia, serif; color: #c7b9a1; }
+.bottom-takeaway { border-color: #79674b88; color: #eee3d1; font-family: Georgia, serif; font-size: 31px !important; }
+.equation-in, .equation-out { font-family: Georgia, serif; font-weight: 400; font-size: 49px; }
+.equation-in { color: #d1c2a7; }
+.equation-out, .minus { color: #d0b47b; }
+.equation-costs { border-color: #79674b88; }
+.equation-costs div { font-family: Georgia, serif; }
+.equation-label { color: #b9a98f; font-family: Golos, Arial, sans-serif; }
+.role-column { border-top: 1px solid #a38a61; }
+.role-column .role-title { font-family: Georgia, serif; font-size: 38px; }
+.role-column p { font-family: Georgia, serif; color: #c7b9a1; }
+.role-glyph { color: #c6ad7d; }
+.weather-choice p, .weather-step p { font-family: Georgia, serif; }
+.weather-step { border-color: #79674b88; }
+.weather-step span { font-family: Georgia, serif; color: #d0b47b; }
+.weather-route::before { background: #bca27a; }
+.location { border-color: #79674b88; }
+.location h3 { font-family: Georgia, serif; font-size: 37px; }
+.location p { font-family: Georgia, serif; color: #c7b9a1; }
+.location .loc-dot { border-color: #a38a61; }
+.location .loc-dot::after { background: #c6ad7d; }
+.risk-line { border-color: #79674b88; }
+.risk-line h3 { font-family: Georgia, serif; font-size: 37px; }
+.risk-line p { font-family: Georgia, serif; color: #c7b9a1; }
+.risk-line .arrow { color: #c6ad7d; }
+.journey::before { background: #a38a61; }
+.journey .icon { stroke: #c6ad7d; fill: #211e17; background: #211e17; }
+.journey h3 { font-family: Georgia, serif; font-size: 41px; }
+.journey p { font-family: Georgia, serif; color: #c7b9a1; }
+.conclusion h2, .museum-conclusion h2 { font-family: Georgia, serif; font-size: 82px; line-height: 1.1; max-width: 1500px; }
+.conclusion-item { border-top: 1px solid #bca27a; }
+.conclusion-item h3 { font-family: Georgia, serif; font-size: 37px; }
+.conclusion-item p { font-family: Georgia, serif; font-size: 30px; color: #d1c4ad; }
+.conclusion .bottom-takeaway { color: #c7b9a1; }
+
+/* Approved cover B. All coordinates refer to the 1920 x 1080 canvas. */
+.heritage-cover { background: #171411; }
+.heritage-cover .content { padding: 0; }
+.heritage-cover .kicker, .heritage-cover .slide-num { display: none; }
+.heritage-cover .b-city { position: absolute; inset: 0; background: linear-gradient(#1b1209aa, #1b1209bb), url('assets/images/old-neva-1753-web.jpg') center/cover; filter: sepia(1); }
+.heritage-cover .b-paper { position: absolute; inset: 0; background: url('assets/intro/reference-graphics/museum-wall.png') center/700px; opacity: .16; mix-blend-mode: screen; }
+.heritage-cover .b-ghost { position: absolute; bottom: 110px; left: -30px; font: 700 190px MuseumOswald, Impact, sans-serif; color: transparent; -webkit-text-stroke: 1px #c2a87744; white-space: nowrap; letter-spacing: -3px; }
+.heritage-cover .b-small-label { position: absolute; left: 985px; top: 90px; font: 500 25px MuseumOswald, sans-serif; letter-spacing: 7px; color: #e6d7c0; }
+.reveal .heritage-cover h1.b-title { position: absolute; left: 965px; top: 180px; z-index: 3; margin: 0; font: 700 174px/.96 MuseumOswald, Impact, sans-serif; letter-spacing: -5px; color: #f3eddf; text-transform: uppercase; }
+.heritage-cover .b-title span { display: block; }
+.heritage-cover .b-horse { position: absolute; left: 10px; top: 40px; width: 1080px; height: 1070px; object-fit: contain; z-index: 4; filter: drop-shadow(30px 15px 25px #0009) saturate(.7); }
+.heritage-cover .b-topic { position: absolute; left: 1000px; top: 610px; z-index: 6; display: flex; flex-direction: column; align-items: flex-start; gap: 3px; }
+.heritage-cover .b-topic span { font: 600 43px/1 MuseumOswald, sans-serif; color: #e6d7c0; background: #0b0a08e8; padding: 8px 17px; letter-spacing: .5px; }
+.heritage-cover .b-caption { position: absolute; left: 1015px; top: 850px; z-index: 6; font: 29px/1.4 Golos, Arial, sans-serif; color: #d2c1a3; }
+.cover-intro-button { position: absolute; left: 1015px; top: 959px; z-index: 7; color: #e8d5af; font: 21px/1.2 Georgia, serif; border-bottom: 1px solid #bca27a; padding: 10px 0; }
+.cover-intro-button:hover { color: #fff8e9; border-color: #f3eddf; }
+.heritage-cover .slide-source { color: #d2c1a3; text-shadow: 0 2px 7px #171411, 0 0 14px #171411; }
+
+/* Surrounding controls follow the same warm material palette. */
+.toolbar { background: #171411f0; border-color: #51452f66; }
+.brand-symbol { font-family: Georgia, serif; font-weight: 400; color: #d0b47b; }
+.brand, .tool { color: #cabba2; }
+.tool:hover, .tool[aria-pressed=true] { color: #f0d7a6; }
+.deck-navigation { background: #171411f2; border-color: #51452f66; }
+.nav-topic, .sources-button { color: #c6b79d; }
+.panel { background: #252018; border-color: #8a76504d; color: #f3eddf; }
+.panel-header h2, .sources-panel h3 { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.02em; }
+.panel-header h2 { font-size: 29px; }
+.panel-intro, .source-item small, .close-dialog { color: #bfb098; }
+.notes-panel p { font-family: Georgia, serif; }
+.contents-item, .source-item { border-color: #79674b66; }
+.contents-item span, .text-link, .intro-actions button { color: #dcc08b; }
+.source-item>a { color: #e0c79f; }
+.intro-actions { background: #171411; color: #c6b79d; }
+#load-error { background: #171411; border-color: #bca27a; }
+button:focus-visible, a:focus-visible { outline-color: #dcc08b; }
+
+@media print {
+  .reveal, .reveal-viewport { background: #171411; color: #f3eddf; }
+  .cover-intro-button { display: none; }
+}
+
+/* Scroll-led viewing, with a separate conventional slide mode for presenting. */
+.reveal-scroll { scroll-behavior: auto; overscroll-behavior-y: contain; }
+.museum-source-backdrop, .heritage-cover .b-city { inset: -70px 0; }
+.chapter-nav { position: fixed; z-index: 19; left: 14px; top: 50%; transform: translateY(-50%); display: grid; gap: 13px; }
+.chapter-nav button { display: flex; align-items: center; gap: 11px; padding: 5px 0; text-align: left; }
+.chapter-nav i { display: block; width: 4px; height: 15px; background: #b9a98f55; transition: height .35s, background .35s; }
+.chapter-nav span { font: 11px Golos, sans-serif; color: #e2d1b1; padding: 5px 8px; background: #171411eb; opacity: 0; transform: translateX(-7px); transition: opacity .25s, transform .25s; pointer-events: none; }
+.chapter-nav button:hover span, .chapter-nav button:focus-visible span { opacity: 1; transform: translateX(0); }
+.chapter-nav button.active i { height: 29px; background: #dfc18b; }
+.toolbar::after { content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; height: 2px; background: #d0b47b; transform-origin: left; transform: scaleX(var(--story-progress, 0)); }
+body:not(.story-scroll) .toolbar::after { display: none; }
+.scroll-invitation { position: absolute; z-index: 8; left: 150px; bottom: 107px; display: flex; align-items: center; gap: 18px; color: #e6d7c0; font: 18px Golos, sans-serif; }
+.scroll-invitation i { font: normal 34px Georgia, serif; animation: invitation-drift 2.3s ease-in-out infinite; }
+body:not(.story-scroll) .scroll-invitation { display: none; }
+@keyframes invitation-drift { 0%,100% { transform: translateY(-4px); opacity: .5; } 50% { transform: translateY(7px); opacity: 1; } }
+.reveal .heritage-cover h1.b-title { line-height: 1.06; top: 161px; }
+.heritage-cover .b-title span { padding-bottom: .06em; }
+@media(max-width:800px) { .chapter-nav { left: 5px; gap: 9px; } .chapter-nav i { width: 3px; height: 9px; } .chapter-nav button.active i { height: 20px; } }
+@media(prefers-reduced-motion:reduce) { .reveal-scroll { scroll-behavior: auto; } .scroll-invitation i { animation: none; } }
+@media print { .chapter-nav,.scroll-invitation { display: none; } }
+
+.hotel-risk-layout { grid-template-columns: 670px 1fr; gap: 82px; margin-top: 30px; }
+.hotel-risk-layout .hotel-room { height: 620px; width: 100%; padding: 0; margin: 0; overflow: hidden; border: 1px solid #9f8a5b66; }
+.room-photo { position: absolute; inset: -20px 0; width: 100%; height: calc(100% + 40px); object-fit: cover; object-position: center 65%; filter: saturate(.85) brightness(.92); }
+.room-photo-shade { position: absolute; inset: 0; background: linear-gradient(#171411a0,transparent 25%,transparent 56%,#171411e8 100%); }
+.hotel-risk-layout .toggle-set { position: absolute; z-index: 2; top: 22px; left: 24px; margin: 0; background: #171411d9; border-color: #b9a98f88; }
+.hotel-risk-layout .toggle-set button { padding: 14px 19px; font-size: 22px; }
+.hotel-risk-layout .room-state { left: 30px; right: 30px; bottom: 66px; color: #f3eddf; font: 29px/1.3 Georgia, serif; }
+.room-photo-caption { position: absolute; bottom: 23px; left: 30px; color: #c7b9a1; font: 16px/1.2 Golos, sans-serif; }
+.hotel-risk-layout .costs { padding-top: 14px; align-content: start; gap: 28px; }
+.hotel-risk-layout .cost-row { font-size: 30px; gap: 20px; }
+.hotel-risk-layout .cost-status { white-space: nowrap; font-size: 20px; }
+.loading-splash { position: fixed; z-index: 18; inset: 65px 0 57px; background: #171411; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px; }
+.loading-splash[hidden] { display: none; }
+.loading-splash span { font: 42px Georgia, serif; color: #f3eddf; }
+.loading-splash small { font: 13px Golos, sans-serif; color: #b9a98f; }
+.loading-splash i { width: 110px; height: 1px; margin-top: 10px; background: #c6ad7d; animation: loading-pulse 1.3s ease-in-out infinite; }
+.museum-conclusion .photo-bg { filter: saturate(.9) brightness(.9); }
+.museum-conclusion .photo-scrim { background: linear-gradient(90deg,#171411ed 0%,#171411b0 54%,#17141135 100%),linear-gradient(0deg,#171411da 0%,transparent 70%); }
+@keyframes loading-pulse { 0%,100% { opacity: .2; transform: scaleX(.35); } 50% { opacity: 1; transform: scaleX(1); } }
+@media print { .loading-splash { display: none; } }
